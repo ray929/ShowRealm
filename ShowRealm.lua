@@ -25,13 +25,8 @@ local function Init()
     end
     text:SetText(LABEL..": "..realm)
 
-    -- 优先挂在标题文本(角色名)下方居中，标题不存在则挂在框架顶部居中
-    local title = CharacterFrameTitleText or frame.TitleText
-    if title then
-        text:SetPoint("TOP", title, "BOTTOM", 0, -2)
-    else
-        text:SetPoint("TOP", frame, "TOP", 0, -38)
-    end
+    -- 贴在角色框架顶部，文本自身锚点设为底部居中，使其位于框架上方
+    text:SetPoint("BOTTOM", frame, "TOP", 0, 0)
 end
 
 local f = CreateFrame("Frame")
