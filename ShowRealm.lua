@@ -1,4 +1,18 @@
 -- 登录时缓存服务器名，在角色信息框架(C键)顶部居中独立显示，不再修改标题字符串
+
+-- 标签按客户端语言本地化：简中/繁中/其他
+local LABEL
+do
+    local locale = GetLocale()
+    if locale == "zhCN" then
+        LABEL = "服务器"
+    elseif locale == "zhTW" then
+        LABEL = "伺服器"
+    else
+        LABEL = "Realm"
+    end
+end
+
 local function Init()
     local realm = GetRealmName()
     local frame = CharacterFrame
@@ -9,7 +23,7 @@ local function Init()
     if font then
         text:SetFont(font, 14, "OUTLINE")
     end
-    text:SetText("服务器: "..realm)
+    text:SetText(LABEL..": "..realm)
 
     -- 优先挂在标题文本(角色名)下方居中，标题不存在则挂在框架顶部居中
     local title = CharacterFrameTitleText or frame.TitleText
