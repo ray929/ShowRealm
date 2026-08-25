@@ -1,0 +1,6 @@
+package-as: ShowRealm
+enable-nolib-creation: no
+ignore:
+  - docs
+  - AGENTS.md
+  - Libs/LibStub/tests

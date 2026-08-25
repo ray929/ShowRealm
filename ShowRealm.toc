@@ -1,9 +1,22 @@
-## Interface: 120000, 120001, 120100
+## Interface: 120100
 ## Title: ShowRealm
+## Title-zhCN: 显示服务器名
 ## Notes: 一个在角色查看窗口显示服务器的轻量级插件
 ## Notes-enUS: A lightweight addon that shows the realm name in the character frame
-## Author: shray929
-## Version: 1.4.0
+## Author: ray929
+## Version: @project-version@
 ## IconTexture: Interface\Icons\INV_Misc_Map02
+## Category: User Interface
+## Category-deDE: Benutzerinterface
+## Category-esES: Interfaz de usuario
+## Category-esMX: Interfaz de usuario
+## Category-frFR: Interface utilisateur
+## Category-itIT: Interfaccia utente
+## Category-koKR: 사용자 인터페이스
+## Category-ptBR: Interface do usuário
+## Category-ruRU: Интерфейс пользователя
+## Category-zhCN: 用户界面
+## Category-zhTW: 使用者介面
+## DefaultState: enabled
 
 ShowRealm.lua
