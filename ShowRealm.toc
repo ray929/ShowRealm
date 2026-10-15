@@ -1,4 +1,4 @@
-## Interface: 120100
+## Interface: 120105
 ## Title: ShowRealm
 ## Title-zhCN: 显示服务器名
 ## Notes: 一个在角色查看窗口显示服务器的轻量级插件
@@ -18,5 +18,6 @@
 ## Category-zhCN: 用户界面
 ## Category-zhTW: 使用者介面
 ## DefaultState: enabled
+## X-Curse-Project-ID: 1470781
 
 ShowRealm.lua
